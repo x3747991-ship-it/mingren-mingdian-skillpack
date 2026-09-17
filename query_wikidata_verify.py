@@ -14,7 +14,7 @@ import urllib.parse
 import urllib.request
 
 API = "https://www.wikidata.org/w/api.php"
-USER_AGENT = "celebrity-bazi-skill/1.0 (research tool; contact: user@example.com)"
+USER_AGENT = "tongren-mingdian-skill/1.0 (research tool; contact: user@example.com)"
 
 
 def _get(params):
