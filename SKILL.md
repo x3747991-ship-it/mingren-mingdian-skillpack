@@ -1,9 +1,9 @@
 ---
-name: "celebrity-bazi"
+name: "tongren-mingdian"
 description: "输入八字四柱或出生日期，反推该三柱在历史跨度内的全部公历日期，跨甲子检索同三柱（年/月/日柱相同）的同命名人（联网：维基百科/百度百科/Wikidata + 内置四柱命例库），并据《五行精纪》禄命法八科（纳音/干支/三元/吉神/凶神/六亲/健康/大运）对八字分断。当用户想查同八字名人、同三柱名人或八字分析时调用。"
 ---
 
-# 名人命典（celebrity-bazi）
+# 同人命典（tongren-mingdian）
 
 根据用户提供的八字（四柱）或公历出生日期，找出四柱前三柱（年柱/月柱/日柱）与用户完全相同的名人，并核对来源。核心能力是**跨甲子**检索：同一组三柱每 60 年循环出现，本技能会列出它对应的全部历史日期并逐档查人。
 
@@ -20,7 +20,7 @@ description: "输入八字四柱或出生日期，反推该三柱在历史跨度
 
 - Python 3
 - lunar_python（纯 Python）：`python -m pip install lunar_python --no-build-isolation`
-- 本技能目录下脚本（相对工作区根目录为 `.trae/skills/celebrity-bazi/`）：
+- 本技能目录下脚本（相对工作区根目录为 `.trae/skills/tongren-mingdian/`）：
   - `bazi.py`：四柱换算＋八字逆向反推（本地计算，无需联网）
   - `query_wikidata.py`：SPARQL 反查同日出生名人（**本环境 SPARQL 数据查询常超时，勿依赖**；极简查询可达、实名倒查超时，故通常跳过）
   - `query_wikidata_verify.py`：Wikidata 正查核实出生日期（名字→QID→P569，联网可用时用）
