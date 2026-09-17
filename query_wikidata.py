@@ -10,7 +10,7 @@ import urllib.parse
 import urllib.request
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
-USER_AGENT = "celebrity-bazi-skill/1.0 (research tool; contact: user@example.com)"
+USER_AGENT = "tongren-mingdian-skill/1.0 (research tool; contact: user@example.com)"
 
 QUERY_TEMPLATE = """
 SELECT ?person ?personLabel ?personDescription ?sitelinks ?birthdate ?enTitle ?zhTitle WHERE {
